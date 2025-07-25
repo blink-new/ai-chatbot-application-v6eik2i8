@@ -4,74 +4,74 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 238 75% 65%;
+    --background: 214 9% 22%;
+    --foreground: 0 0% 98%;
+    --card: 216 9% 18%;
+    --card-foreground: 0 0% 98%;
+    --popover: 216 9% 18%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 230 89% 65%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 262 83% 70%;
-    --accent-foreground: 240 5.9% 10%;
+    --secondary: 215 9% 25%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 9% 25%;
+    --muted-foreground: 217 9% 73%;
+    --accent: 139 84% 74%;
+    --accent-foreground: 216 9% 18%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 238 75% 65%;
+    --border: 215 9% 25%;
+    --input: 215 9% 25%;
+    --ring: 230 89% 65%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-background: 216 9% 18%;
+    --sidebar-foreground: 217 9% 73%;
+    --sidebar-primary: 230 89% 65%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 215 9% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 9% 25%;
+    --sidebar-ring: 230 89% 65%;
   }
   
   .dark {
-    --background: 15 23% 4%;
+    --background: 216 9% 18%;
     --foreground: 0 0% 98%;
-    --card: 15 23% 4%;
+    --card: 216 9% 18%;
     --card-foreground: 0 0% 98%;
-    --popover: 15 23% 4%;
+    --popover: 216 9% 18%;
     --popover-foreground: 0 0% 98%;
-    --primary: 238 75% 65%;
-    --primary-foreground: 15 23% 4%;
-    --secondary: 240 3.7% 15.9%;
+    --primary: 230 89% 65%;
+    --primary-foreground: 216 9% 18%;
+    --secondary: 215 9% 25%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 262 83% 70%;
-    --accent-foreground: 15 23% 4%;
+    --muted: 215 9% 25%;
+    --muted-foreground: 217 9% 73%;
+    --accent: 139 84% 74%;
+    --accent-foreground: 216 9% 18%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 238 75% 65%;
+    --border: 215 9% 25%;
+    --input: 215 9% 25%;
+    --ring: 230 89% 65%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 216 9% 18%;
+    --sidebar-foreground: 217 9% 73%;
+    --sidebar-primary: 230 89% 65%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 9% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 9% 25%;
+    --sidebar-ring: 230 89% 65%;
   }
 }
 
@@ -82,10 +82,146 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+
+    background-color: #36393f;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @layer components {
+  /* Discord-стиль скроллбара */
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: #2f3136;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #202225;
+    border: 4px solid #2f3136;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #40444b;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #2f3136;
+  }
+
+  /* Анимации для Discord-стиля */
+  @keyframes fade-in {
+    from {
+      opacity: 0%;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 100%;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 100%;
+    }
+
+    50% {
+      opacity: 50%;
+    }
+  }
+
+  .message-enter {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  .typing-dots {
+    animation: pulse 1.4s infinite;
+  }
+
+  /* Стили для сообщений */
+  .message-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  .message-content em {
+    font-style: italic;
+    color: #b9bbbe;
+  }
+
+  .message-content strong {
+    font-weight: 600;
+    color: #fff;
+  }
+
+  /* Стили для кода */
+  .message-content code {
+    background-color: #2f3136;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.875em;
+  }
+
+  /* Стили для ссылок */
+  .message-content a {
+    color: #00aff4;
+    text-decoration: none;
+  }
+
+  .message-content a:hover {
+    text-decoration: underline;
+  }
+
+  /* Анимация для индикатора печати */
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+    }
+
+    40% {
+      transform: scale(1);
+    }
+  }
+
+  .bounce-dot {
+    animation: bounce 1.4s infinite ease-in-out both;
+  }
+
+  .bounce-dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+
+  .bounce-dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+
+  /* Стили для градиентного фона */
+  .gradient-bg {
+    background: linear-gradient(135deg, #2f3136 0%, #36393f 50%, #2f3136 100%);
+  }
+
+  /* Стили для карточек персонажей */
+  .character-card {
+    background: linear-gradient(135deg, #40444b 0%, #36393f 100%);
+    border: 1px solid #40444b;
+    transition: all 0.3s ease;
+  }
+
+  .character-card:hover {
+    border-color: #5865f2;
+    box-shadow: 0 4px 12px rgb(88 101 242 / 20%);
+  }
+
   .chat-message-enter {
     animation: slide-in-up 0.3s ease-out;
   }
